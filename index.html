@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body class="min-h-screen w-full bg-gradient-to-bl from-pink-500 to-blue-500 flex justify-center items-center p-4">
+  
+    <div class="box-wrapper w-full max-w-4xl h-auto md:h-4/5 p-4 md:p-10 mx-auto relative">
+        <div class="w-6 h-6 border border-gray-100 rounded-full absolute left-0 top-0 hidden md:block"></div>
+        <div class="w-12 h-12 absolute right-0 top-0 hidden md:block">
+            <div class="w-full h-full absolute left-0 top-0 rounded-full border border-gray-100"></div>
+            <div class="w-6 h-6 absolute left-7 top-6 rounded-full border-4 border-gray-100"></div>
+        </div>
+        <div class="w-8 h-8 absolute -left-5 bottom-0 hidden md:block">
+            <div class="w-full h-full absolute left-6 top-0 text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 16L6 10H18L12 16Z"></path></svg>
+            </div>
+            <div class="w-8 h-8 absolute left-12 top-4 rounded-full text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 16L6 10H18L12 16Z"></path></svg>
+            </div>
+        </div>
+
+        <div class="absolute w-full left-0 -bottom-5">
+          <p class="text-white uppercase text-center text-lg md:text-2xl tracking-[0.5rem] md:tracking-[1rem]">
+            Micheal Jordan
+          </p>
+        </div>
+
+        <!-- card -->
+        <div class="w-full h-full rounded-2xl bg-gray-100 flex flex-col md:flex-row shadow-[0_0_60px_-15px_rgba(0,0,0,0.7)]">
+          <!-- left side -->
+          <div class="w-full md:w-1/2 bg-gradient-to-tr from-pink-500 to-blue-500 shadow-[15px_0_35px_-5px_rgba(0,0,0,0.5)] rounded-t-2xl md:rounded-2xl md:transform md:scale-105 relative p-4 min-h-[300px] md:min-h-0">
+            <div class="logo">
+              <svg class="fill-current w-16 md:w-20 text-white absolute left-5 top-5" xmlns="http://www.w3.org/2000/svg" viewBox="831.015 861.675 1337.165 497.165"><path fill-rule="evenodd" d="M1077.4 862.175c-76.02 86.851-181.29 184.085-206.557 305.415-39.828 191.25 192.817 186.09 305.737 139.41 332.35-137.38 661.07-283.39 991.6-425.084-321.38 85.602-641.61 175.654-964.15 256.804-230.745 58.06-185.84-147.9-126.63-276.545z"/></svg>
+            </div>
+
+            <div class="number absolute top-0 -right-8 md:-right-10 bg-gradient-to-br from-pink-500 to-blue-500 text-transparent drop-shadow-[15px_0_35px_rgba(0,0,0,0.5)]  bg-clip-text">
+              <span class=" text-[16rem] font-bold leading-none font-[pt-sans]">32</span>
+            </div>
+
+            <div class="shoe absolute top-16 md:top-40 group">
+              <img class="relative left-4 scale-x-[-1] rotate-[45deg] group-hover:rotate-[1deg] group-hover:scale-x-[-1.5] group-hover:scale-y-[1.5] transform transition-all duration-500 w-60 md:w-full" src="../assets/shoe.png" alt="shoe">
+
+              <div class="plus w-8 md:w-10 h-8 md:h-10 rounded-full bg-pink-500 text-white absolute top-0 left-20 md:left-24 group-hover:left-0 group-hover:top-12 md:group-hover:top-16 cursor-pointer transform hover:scale-125 transition-all duration-500">
+                <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19,11H13V5a1,1,0,0,0-2,0v6H5a1,1,0,0,0,0,2h6v6a1,1,0,0,0,2,0V13h6a1,1,0,0,0,0-2Z"></path></svg>
+              </div>
+
+              <div class="plus w-8 md:w-10 h-8 md:h-10 rounded-full bg-blue-500 text-white absolute -bottom-2 right-12 md:right-20 group-hover:-right-14 group-hover:bottom-6 md:group-hover:bottom-10 cursor-pointer transform hover:scale-125 transition-all duration-500">
+                <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19,11H13V5a1,1,0,0,0-2,0v6H5a1,1,0,0,0,0,2h6v6a1,1,0,0,0,2,0V13h6a1,1,0,0,0,0-2Z"></path></svg>
+              </div>
+            </div>
+
+            <div class="dots w-full absolute bottom-4 md:bottom-7 flex justify-center gap-3">
+              <span class="w-3 md:w-4 h-3 md:h-4 rounded-full bg-white block cursor-pointer hover:bg-white"></span>
+              <span class="w-3 md:w-4 h-3 md:h-4 rounded-full bg-gray-300 block cursor-pointer hover:bg-white"></span>
+              <span class="w-3 md:w-4 h-3 md:h-4 rounded-full bg-gray-300 block cursor-pointer hover:bg-white"></span>
+            </div>
+          </div>
+
+          <!-- right side -->
+          <div class="w-full md:w-1/2 p-4 md:p-6">
+            <div class="flex justify-end">
+              <img class="w-32 md:w-52" src="../assets/PngItem_4112653.png" alt="logo">
+            </div>
+
+            <div>
+              <span class="text-xl md:text-xl text-gray-700 font-bold ml-4 md:ml-6">&199</span>
+              <p class="px-4 md:px-6 text-gray-700 mt-3 md:mt-5 leading-6 text-base md:text-base">Experience sports, training, shopping and everything else that's new at Nike from any country in the world.</p>
+            </div>
+
+            <div class="filter mt-6 md:mt-10 px-4 md:px-6">
+              <div class="inner flex flex-col space-y-6 md:space-y-10 text-base md:text-xl text-gray-600">
+                <div class="size">
+                  <div class="flex flex-wrap gap-4">
+                    <div class="text-lg md:text-lg">Size</div>
+                    <div class="flex space-x-4 md:space-x-10 ml-10 md:ml-16">
+                      <span class="cursor-pointer hover:text-pink-600 text-base md:text-lg">S</span>
+                      <span class="cursor-pointer hover:text-pink-600 text-base md:text-lg">M</span>
+                      <span class="cursor-pointer hover:text-pink-600 text-base md:text-lg">L</span>
+                      <span class="cursor-pointer hover:text-pink-600 text-base md:text-lg">XL</span>
+                      <span class="cursor-pointer hover:text-pink-600 text-base md:text-lg">XXL</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="color">
+                  <div class="flex items-center flex-wrap gap-4">
+                    <div class="text-lg md:text-lg">Colour</div>
+                    <div class="flex space-x-6 md:space-x-10 ml-10 md:ml-16">
+                      <span class="w-2 h-2 ring rounded-full cursor-pointer ring-amber-500"></span>
+                      <span class="w-2 h-2 ring rounded-full cursor-pointer flex justify-center items-center ring-black">
+                        <span class="w-1 h-1 rounded-full bg-black block"></span>
+                      </span>
+                      <span class="w-2 h-2 ring rounded-full cursor-pointer ring-blue-500"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="quantity">
+                  <div class="flex items-center flex-wrap gap-4">
+                    <div class="text-lg md:text-lg">Quantity</div>
+                    <div class="flex justify-center items-center space-x-4 md:space-x-8 ml-5 md:ml-10">
+                      <div class="increment flex bg-gray-200 rounded-full overflow-hidden">
+                        <span class="flex items-center justify-center px-2 cursor-pointer hover:text-white hover:bg-blue-400">
+                          <svg class="fill-current w-4 md:w-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M6 13a1 1 0 1 1 0-2h12a1 1 0 1 1 0 2H6Z"/></svg>
+                        </span>
+                        <span class="flex">
+                          <input type="text" value="1" name="Quantity" class="text-center text-base md:text-lg bg-white w-12 md:w-16 focus:outline-none">
+                        </span>
+                        <span class="flex items-center justify-center px-2 md:px-3 cursor-pointer hover:text-white hover:bg-blue-400">
+                          <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 1v14M1 8h14"/></svg>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="buy-now mt-6 md:mt-10 flex justify-center w-full group">
+                <button class="flex items-center justify-around relative bg-pink-500 text-white w-36 md:w-44 h-10 md:h-12 rounded-full uppercase group-hover:bg-blue-500 transition-all">
+                  <span class="text-sm md:text-base tracking-wider ml-3">Buy Now</span>
+                  <span class="bg-blue-500 w-6 md:w-8 h-6 md:h-8 flex justify-center items-center rounded-full group-hover:rotate-90 duration-300 group-hover:bg-pink-500">
+                    <svg class="fill-current h-5 md:h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19,11H13V5a1,1,0,0,0-2,0v6H5a1,1,0,0,0,0,2h6v6a1,1,0,0,0,2,0V13h6a1,1,0,0,0,0-2Z"></path></svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
